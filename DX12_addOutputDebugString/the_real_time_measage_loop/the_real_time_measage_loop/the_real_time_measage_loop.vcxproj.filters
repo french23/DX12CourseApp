@@ -27,12 +27,18 @@
     <ClInclude Include="the_real_time_measage_loop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MyDirectX.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Proj_Dx12App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyDirectX.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
