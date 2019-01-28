@@ -1,5 +1,1 @@
-﻿  MyDirectX.cpp
-d:\modules\peter\dx12course101\github\dx12courseapp\dx12_addoutputdebugstring\the_real_time_measage_loop\the_real_time_measage_loop\mydirectx.cpp(37): warning C4101: 'mpD3dDevice': unreferenced local variable
-d:\modules\peter\dx12course101\github\dx12courseapp\dx12_addoutputdebugstring\the_real_time_measage_loop\the_real_time_measage_loop\mydirectx.cpp(38): warning C4101: 'mpHardwareAdapter': unreferenced local variable
-d:\modules\peter\dx12course101\github\dx12courseapp\dx12_addoutputdebugstring\the_real_time_measage_loop\the_real_time_measage_loop\mydirectx.cpp(36): warning C4101: 'mpDxgiFactory': unreferenced local variable
-  the_real_time_measage_loop.vcxproj -> D:\modules\Peter\DX12Course101\Github\DX12CourseApp\DX12_addOutputDebugString\the_real_time_measage_loop\Debug\the_real_time_measage_loop.exe
+﻿  the_real_time_measage_loop.vcxproj -> D:\modules\Peter\DX12Course101\Github\DX12CourseApp\DX12_addOutputDebugString\the_real_time_measage_loop\Debug\the_real_time_measage_loop.exe
