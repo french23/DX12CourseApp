@@ -8,6 +8,20 @@ myDirectX::myDirectX()
 
 myDirectX::~myDirectX()
 {
+	if (mpDxgiFactory != nullptr)
+	{
+		mpDxgiFactory->Release();
+	}
+
+	if (mpHardwareAdapter != nullptr)
+	{
+		mpHardwareAdapter->Release();
+	}
+
+	if (mpD3dDevice != nullptr)
+	{
+		mpD3dDevice->Release();
+	}
 }
 
 IDXGIFactory4 * myDirectX::getDxgiFactory(void)
