@@ -14,11 +14,13 @@ public:
 	ID3D12Device *  getD3dDevice(void);
 	IDXGIAdapter1 * getDXGIAdapter1(void);
 	HRESULT Initialize(void);
-	HRESULT InitializeFactoryDeviceAndHardware(void);
 private:
 	IDXGIFactory4 * mpDxgiFactory = nullptr;
 	ID3D12Device * mpD3dDevice = nullptr;
 	IDXGIAdapter1 * mpHardwareAdapter = nullptr;
+	ID3D12CommandQueue * mpID3D12CommandQueue = nullptr;
 	HRESULT GetHardwareAdapter(IDXGIFactory4* pFactory, IDXGIAdapter1** ppAdapter);
+	HRESULT InitializeFactoryDeviceAndHardware(void);
+	HRESULT InitializeCommandObjects(void);
 };
 
