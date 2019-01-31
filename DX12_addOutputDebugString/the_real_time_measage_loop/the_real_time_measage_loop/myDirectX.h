@@ -19,6 +19,8 @@ private:
 	ID3D12Device * mpD3dDevice = nullptr;
 	IDXGIAdapter1 * mpHardwareAdapter = nullptr;
 	ID3D12CommandQueue * mpID3D12CommandQueue = nullptr;
+	ID3D12CommandAllocator * mpID3D12CommandAllocator = nullptr;
+	ID3D12GraphicsCommandList * mpID3D12GraphicsCommandList = nullptr;
 	HRESULT GetHardwareAdapter(IDXGIFactory4* pFactory, IDXGIAdapter1** ppAdapter);
 	HRESULT InitializeFactoryDeviceAndHardware(void);
 	HRESULT InitializeCommandObjects(void);
