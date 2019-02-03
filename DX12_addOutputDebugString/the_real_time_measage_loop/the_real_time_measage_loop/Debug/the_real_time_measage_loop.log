@@ -1,4 +1,5 @@
-﻿  Proj_Dx12App.cpp
+﻿  stdafx.cpp
   myDirectX.cpp
+  Proj_Dx12App.cpp
   Generating Code...
   the_real_time_measage_loop.vcxproj -> D:\modules\Peter\DX12Course101\Github\DX12CourseApp\DX12_addOutputDebugString\the_real_time_measage_loop\Debug\the_real_time_measage_loop.exe
