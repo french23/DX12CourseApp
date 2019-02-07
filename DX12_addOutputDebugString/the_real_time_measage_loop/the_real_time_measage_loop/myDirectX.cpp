@@ -70,6 +70,11 @@ HRESULT myDirectX::Initialize(HWND vhMainWnd)
 		hr = InitializeCommandObjects();
 	}
 
+	if (hr == S_OK)
+	{
+		hr = InitializeSwapChain();
+	}
+
 	return hr;
 }
 
@@ -236,11 +241,11 @@ HRESULT myDirectX::InitializeCommandObjects(void)
 
 	mpID3D12GraphicsCommandList->Close();
 
-	if (vResult == S_OK)
-	{
-		wstring vOutputMessage = L"Success - Command Objects were created";
-		MessageBox(nullptr, vOutputMessage.c_str(), L"Working!!", MB_OK);
-	}
+	//if (vResult == S_OK)
+	//{
+	//	wstring vOutputMessage = L"Success - Command Objects were created";
+	//	MessageBox(nullptr, vOutputMessage.c_str(), L"Working!!", MB_OK);
+	//}
 
 	return vResult;
 }
@@ -305,8 +310,15 @@ HRESULT myDirectX::InitializeSwapChain(void)
 		throw(new exception("error creating swap chain"));
 	}
 
+	if (hr == S_OK)
+	{
+		wstring vOutputMessage = L"Success - The Swap Chain was Created!";
+		MessageBox(nullptr, vOutputMessage.c_str(), L"Working!!", MB_OK);
+	}
+
 	return hr;
 }
+
 int myDirectX::getRenderTargetWidth(void)
 {
 	return mRenderTargetWidth;
