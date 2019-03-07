@@ -108,7 +108,7 @@ HRESULT myDirectX::InitializeFactoryDeviceAndHardware(void)
 
 			D3D12_FEATURE_DATA_MULTISAMPLE_QUALITY_LEVELS msQualityLevels;
 			msQualityLevels.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
-			msQualityLevels.SampleCount = 1;
+			msQualityLevels.SampleCount = 4;
 			msQualityLevels.Flags = D3D12_MULTISAMPLE_QUALITY_LEVELS_FLAG_NONE;
 			msQualityLevels.NumQualityLevels = 0;
 			mpD3dDevice->CheckFeatureSupport(
@@ -276,7 +276,7 @@ HRESULT myDirectX::InitializeSwapChain(void)
 	// Sampling is covered later. Basically, it says to look at other pixels around each pixel and do a blend 
 	// to make things smoother.
 	// As I wrote above, you should be able to use 4 here, but we are using 1 just to make sure things run.
-	sd.SampleDesc.Count = 1;
+	sd.SampleDesc.Count = 4;
 	sd.SampleDesc.Quality = m4xMsaaQuality; // This was already reduced by one.
 
 											// What are these buffers used for?  Render targets.
